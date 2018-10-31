@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="WeatherApp5DayDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WeatherApp5DayDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <SplitView x:Name="MySplitView" OpenPaneLength="150"
+               CompactPaneLength="50" Margin="0 10 0 0" DisplayMode="CompactInline">
+        <SplitView.Pane>
+            <StackPanel Background="Gray">
+                <Button x:Name="btnShowPanel" FontFamily="Segoe MDL2 Assets" Content="&#xE71D;"
+                        Width="50" Height="50" Background="Transparent" Click="btnShowPanel_Click"/>
+                <ListBox Background="Gray" SelectionMode="Single"
+                         SelectionChanged="ListBox_SelectionChanged">
+                    <ListBoxItem Name="Weather">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MLD2 Assets"
+                                       FontSize="25"
+                                       Text="&#xE1CE;"/>
+                            <TextBlock FontSize="23" Margin="13 0 0 0">Weather</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </StackPanel>
+        </SplitView.Pane>
+        <SplitView.Content>
+            <Frame Name="MyFrame">
+
+            </Frame>
+        </SplitView.Content>
+    </SplitView>
+
+</Page>

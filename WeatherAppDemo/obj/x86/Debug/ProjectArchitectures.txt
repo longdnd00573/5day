@@ -1,0 +1,1 @@
+C:\Users\Long Hack\source\repos\WeatherAppDemo\WeatherAppDemo\WeatherAppDemo.csproj;x86
